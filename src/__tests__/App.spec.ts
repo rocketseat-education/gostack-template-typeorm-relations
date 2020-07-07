@@ -87,7 +87,7 @@ describe('App', () => {
     );
   });
 
-  it('should not be able to create a customer with one e-mail thats already registered', async () => {
+  it('should not be able to create a duplicated product', async () => {
     const product = await request(app).post('/products').send({
       name: 'Produto 01',
       price: 500,
