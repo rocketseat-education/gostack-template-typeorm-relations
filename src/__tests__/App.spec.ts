@@ -145,7 +145,7 @@ describe('App', () => {
         order_products: expect.arrayContaining([
           expect.objectContaining({
             product_id: product.body.id,
-            price: '500.00',
+            price: 500,
             quantity: 5,
           }),
         ]),
@@ -299,7 +299,7 @@ describe('App', () => {
         order_products: expect.arrayContaining([
           expect.objectContaining({
             product_id: product.body.id,
-            price: '500.00',
+            price: 500,
             quantity: 5,
           }),
         ]),
